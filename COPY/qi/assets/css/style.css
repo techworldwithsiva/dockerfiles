@@ -1,0 +1,3039 @@
+/*--------------
+All Contents
+--------------*/
+
+/*-----------------
+1. Reset.css
+2. Helper Classes
+3. Main and Hero Section Stylings
+4. Services Styling
+5. Features Split
+6. Feature with BG
+7. Feature Big
+8. Testimonial Styling
+9. Pricing Section
+10. Call To Action Subscribe
+11. Contact Section
+12. Footer
+13. Back to top
+------------------*/
+
+
+/*----- 1. Reset.css -----*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* --- Common Styles ---*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Montserrat' !important;
+  font-size: 16px;
+	color: #373C46;
+}
+
+p {
+	font-family: 'Open Sans' !important;
+	font-size: 14px;
+}
+
+/*----- Helper Classes -----*/
+
+html * {
+	text-rendering: optimizeLegibility !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*
+::-webkit-scrollbar {
+	display: none;
+}
+*/
+
+::-moz-selection {
+    color: #1106CC;
+    background: #FFFFFF;
+}
+
+::selection {
+    color: #1106CC;
+    background: #FFFFFF;
+}
+
+.nopadding {
+	padding: 0;
+}
+
+.custom-padding {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.no-margin {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.no-color {
+	background: #FFFFFF !important;
+}
+
+#loading {
+   width: 100%;
+   height: 100%;
+   top: 0px;
+   left: 0px;
+   position: fixed;
+   opacity: 1;
+   background-color: #F2F2F2;
+   z-index: 9999;
+   text-align: center;
+}
+
+#loading-image {
+	display: inline;
+    top: 40%;
+    position: relative;
+  z-index: 9999;
+}
+
+
+.logo {
+	position: absolute;
+	left: 2%;
+	top: 2%;
+	z-index: 11;
+}
+
+/* ------ Navbar Styling Starts ----- */
+
+
+.navbar {
+	font-size: 14px;
+  font-family: 'Montserrat';
+	font-weight: 400;
+	text-transform: uppercase;
+	padding-top: 25px;
+	letter-spacing: 1px;
+	height: 80px;
+}
+
+.navbar-default {
+  transition: all 0.6s ease;
+	border-color: transparent;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+  border-radius: 0px;
+  border-color: transparent;
+}
+
+.navbar-default .navbar-toggle:hover {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #666666;
+}
+
+.navbar-default .navbar-brand .navbar-toggle .collapsed {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #111111;
+  }
+
+.navbar-default .navbar-brand {
+	font-family: 'Montserrat';
+	font-size: 24px;
+	color: #444444;
+	letter-spacing: 0;
+	text-transform: capitalize;
+	padding: 12px 0 0 0;
+	-webkit-transition: 200ms;
+	-moz-transition: 200ms;
+	-o-transition: 200ms;
+	transition: 200ms;
+}
+
+.navbar-default .navbar-brand {
+	padding: 5px 0 0 0;
+}
+
+.navbar-default .navbar-brand:hover {
+	color: #111111;
+  transition: 1s;
+}
+
+
+.navbar-default .navbar-nav > li > a {
+	font-family: 'Montserrat';
+	font-size: 13px;
+	font-weight: 400;
+  color: #222222;
+  -webkit-transition: all 0.5s;
+	-moz-transition: all 0.5;
+  transition: all 0.5s;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #999999;
+}
+
+.navbar-default .navbar-nav > .active > a {
+  background: transparent;
+  color: #111111;
+  }
+
+
+.navbar-default .navbar-nav > .active > a:hover {
+    background: transparent;
+    color: #EFEFEF;
+}
+
+.navbar-default .navbar-nav > .active > a:focus {
+	background: transparent;
+  color: #111111;
+}
+
+.navbar-default .navbar-collapse {
+	border-color: transparent;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav .open .dropdown-toggle {
+  color: #111111;
+}
+
+.navbar-default .nav-white > li > a {
+	color: #FFFFFF;
+}
+
+.navbar-default .nav-white > li > a:hover {
+	color: #EFEFEF;
+}
+
+.navbar-default .nav-white {
+	color: #FFFFFF;
+}
+
+
+/*---------- Media Queries ---------*/
+
+@media only screen and (max-width: 767px) {
+
+	.navbar {
+		padding-top: 5px;
+		height: 60px;
+	}
+
+  .navbar-default {
+    border: 0px;
+    background-color: transparent;
+  }
+
+	.navbar-default .navbar-collapse {
+		text-align: center;
+		border-color: transparent;
+	  background-color: #FFFFFF;
+	}
+
+  .navbar-default .navbar-collapse {
+    border: 0;
+    border-color: transparent;
+  }
+
+
+  .navbar-default .navbar-nav > li> a {
+    color: #111111;
+		margin-top: 10px;
+  }
+
+	.navbar-default .navbar-nav > li> a:hover {
+		color: #222222;
+
+	}
+
+  .navbar-default .navbar-brand {
+    color: #222222;
+		padding: 7px 10px !important;
+  }
+
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #666666;
+  }
+}
+
+@media only screen and (min-width: 240px) {
+
+.navbar.past-main {
+  transition: all 0.6s ease;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.99);
+}
+
+.navbar.effect-main:active {
+  -webkit-transition: height 0.6s; /* For Safari 3.1 to 6.0 */
+  transition: height 0.6s;
+  height: 60px;
+}
+
+.navbar.past-main {
+	font-size: 14px;
+	padding-top: 5px;
+	height: 60px;
+	-webkit-box-shadow: 0 1px 5px 0 rgba(96, 96, 96, 0.3);
+	-moz-box-shadow: 0 1px 5px 0 rgba(96, 96, 96, 0.3);
+	box-shadow: 0 1px 5px 0 rgba(96, 96, 96, 0.3);
+	-webkit-transition: 0.5s all ease; /* For Safari 3.1 to 6.0 */
+	transition: 0.5s all ease;
+}
+
+.navbar-default.past-main .navbar-brand {
+	font-size: 21px;
+	color: #444444;
+	padding: 7px 0;
+}
+
+.navbar-default.past-main .navbar-toggle .icon-bar {
+	background-color: #111111;
+}
+
+.navbar-default.past-main .navbar-nav > li > a {
+  color: #606060;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.navbar-default.past-main .navbar-nav > li > a:hover {
+  color: #111111;
+}
+
+.navbar-default.past-main .navbar-nav > .active > a {
+  background: transparent;
+  color: #5924EC;
+  }
+
+
+.navbar-default.past-main .navbar-nav > .active > a:hover {
+    background: transparent;
+    color: #222222;
+}
+
+.navbar-default.past-main .navbar-nav > .active > a:focus {
+	background: transparent;
+  color: #222222;
+}
+
+.nav-alt.past-main .navbar-nav .btn-edge {
+	color: #FFFFFF;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	transition: 0.2s;
+}
+
+.nav-alt.past-main .navbar-nav .btn-edge:hover {
+	color: #FFFFFF;
+}
+
+.navbar-default .navbar-nav .btn-action {
+	padding: 8px 20px;
+	margin: 0;
+	font-size: 12px;
+	text-transform: capitalize;
+}
+
+.navbar-default.past-main .navbar-nav .btn-action {
+	margin: 6px 0 0 0;
+}
+
+
+/* ------------- Navbar Alt Styling --------------*/
+
+
+.nav-alt .navbar-nav > li > a {
+	font-family: 'Josefin Sans';
+	font-size: 16px;
+	color: #444444;
+	text-transform: capitalize;
+}
+
+.nav-alt .navbar-nav > li > a:hover {
+	color: #111111;
+}
+
+.nav-alt .navbar-nav .btn-edge {
+	margin: 8px 0 0 0;
+	padding: 6px 18px;
+	border-radius: 3px;
+	background: #624dd6;
+	border-color: #624dd6;
+	color: #FFFFFF;
+	font-size: 16px;
+	display: inline-block;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	transition: 0.2s;
+}
+
+.nav-alt .navbar-nav .btn-edge:hover {
+	background: #624dd6;
+	color: #FFFFFF;
+}
+
+.nav-alt .navbar-nav .btn-edge:focus {
+	background: #624dd6;
+	color: #FFFFFF !important;
+}
+
+
+/*---------------------------------------------------------------------
+---------------- All Hero Sections Styling Starts Here ----------------
+---------------------------------------------------------------------*/
+
+.hero-1 {
+	padding: 150px 0 0 0;
+	background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/bg.jpg) no-repeat center center;
+	background-size: cover;
+	background: #F2F2F2;
+}
+
+.hero-1 .intro {
+	padding: 0 0 75px 0;
+	text-align: center;
+}
+
+.hero-1 .intro h1 {
+	font-size: 34px;
+	font-weight: bold;
+	line-height: 1.2;
+	color: #373C46;
+}
+
+.hero-1 .intro p {
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1.4;
+	letter-spacing: 0;
+	color: #9da6b8;
+	max-width: 500px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.btn-action {
+	padding: 10px 24px;
+	background: #6c63ff;
+	border: 2px solid;
+	border-color: #6c63ff;
+	border-radius: 100px;
+	box-shadow: 0 3px 15px 0 rgba(0,0,0,.25);
+	font-family: 'Montserrat';
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #FFFFFF;
+	margin: 25px 10px 0 0;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	transition: 0.2s;
+}
+
+.btn-action:hover {
+	color: #FFFFFF;
+	border-color: #6c63ff;
+	background: #6c63ff;
+	-webkit-transform: translateY(-2px);
+	-moz-transform: translateY(-2px);
+	transform: translateY(-2px);
+}
+
+.btn-action:focus {
+	color: #FFFFFF;
+}
+
+.btn-nofill {
+	background: transparent;
+	border: 2px solid;
+	border-color: #0040ff;
+	color: #FFFFFF;
+	background: #0040ff;
+}
+
+.btn-nofill:hover {
+	color: #FFFFFF;
+	background: #0040ff;
+}
+
+
+.btn-fill {
+	background: transparent;
+	border: 2px solid;
+	border-color: #FFFFFF;
+	color: #FFFFFF;
+}
+
+.btn-fill:hover {
+	color: #FFFFFF;
+	background: transparent;
+}
+
+.btn-edge {
+	border-radius: 3px;
+	padding: 10px 20px;
+	background: #0060ff;
+	border-color: #0060ff;
+}
+
+.btn-edge:hover, .btn-edge:focus {
+	background: #0060ff;
+	border-color: #0060ff;
+	color: #FFFFFF;
+}
+
+.btn-white {
+	border-radius: 50px;
+	padding: 10px 20px;
+	background: transparent;
+	color: #FFFFFF;
+	border-color: #FFFFFF;
+}
+
+.btn-white:hover, .btn-white:focus {
+	background: #FFFFFF;
+	border-color: #FFFFFF;
+	color: rgba(0, 0, 0, 1);
+}
+
+
+.product .btn-edge {
+	border-radius: 3px;
+	padding: 10px 20px;
+	background: #624dd6;
+	border-color: #624dd6;
+}
+
+.product .btn-edge:hover, .btn-edge:focus {
+	background: #624dd6;
+	border-color: #624dd6;
+	color: #FFFFFF;
+}
+
+
+/* -----------------------------------------------------------
+------------ Hero 2 Product Landing Styling Starts -----------
+-------------------------------------------------------------*/
+
+
+.hero-2 {
+	padding: 200px 0 50px 0;
+	background: url(../images/bg.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.hero-2 .intro {
+	padding: 75px 0 75px 0;
+}
+
+.hero-2 .intro h1 {
+	font-size: 42px;
+	font-weight: 700;
+	line-height: 1.2;
+	letter-spacing: 0;
+	color: #FFFFFF;
+}
+
+.hero-2 .intro h1 span {
+	font-size: 48px;
+	font-weight: 600;
+	color: #222222;
+}
+
+.hero-2 .intro p {
+	font-family: 'Josefin Sans';
+	font-size: 18px;
+	line-height: 1.4;
+	color: #848484;
+	max-width: 700px;
+	margin: 0 auto;
+	margin-top: 25px;
+
+}
+
+
+
+/* -----------------------------------------------------------
+------------ Hero 3 Service Landing Styling Starts -----------
+-------------------------------------------------------------*/
+
+.hero-3 {
+	padding: 150px 0 0 0;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)), url(../images/bg1.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.hero-3 .intro {
+	padding: 75px 0 75px 0;
+}
+
+.hero-3 .intro h1 {
+	font-size: 32px;
+	font-weight: 600;
+	line-height: 1.2;
+	color: #FFFFFF;
+}
+
+.hero-3 .intro p {
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 300;
+	color: #FFF;
+	margin: 25px 0 0 0;
+}
+
+.hero-3 .btn-action {
+	background: #2575fc;
+	border-color: #2575fc;
+}
+
+/* -----------------------------------------------------------
+------------ Hero 4 Styling Starts -------------
+-------------------------------------------------------------*/
+
+
+.hero-4 {
+	background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+	background-size: cover;
+	padding: 150px 0 100px 0;
+}
+
+.hero-4 .intro {
+	padding: 75px 0 75px 0;
+}
+
+.hero-4 .video-icon {
+	position: absolute;
+	top: 15%;
+	left:0;
+	right: 0;
+	outline: none;
+}
+
+.hero-4 .video-icon i {
+	display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+	padding-left: 7px;
+  text-decoration: none;
+  text-align: center;
+  color: #6A11CB;
+	background: #FFFFFF;
+  font-size: 34px;
+  font-weight: normal;
+  line-height: 1.55em;
+  -webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	border-radius: 50%;
+	box-shadow:0 5px 10px rgba(0, 0, 0, .15);
+}
+
+.hero-4 .intro h1 {
+	font-family: 'Montserrat';
+	font-size: 34px;
+	color: #FFFFFF;
+	font-weight: 600;
+	line-height: 1.2;
+	letter-spacing: -1px;
+}
+
+.hero-4 .intro h4 {
+	font-family: 'Montserrat';
+	font-size: 13px;
+	font-weight: 400;
+	color: #FFFFFF;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	line-height: 1.2;
+	margin-top: 75px;
+	margin-bottom: 10px;
+}
+
+
+/* ------------ Signup Hero Section ------------ */
+
+.signup {
+	background: #152a51;
+	background-size: cover;
+	padding: 100px 0 100px 0;
+}
+
+
+.signup .intro h1 {
+	font-family: 'Montserrat';
+	font-size: 28px;
+	font-weight: 600;
+	color: #FFF;
+	letter-spacing: 0;
+}
+
+.signup .intro p {
+	font-size: 16px;
+	color: #FFF;
+	line-height: 1.5;
+}
+
+.signup-form {
+	padding: 25px 25px 30px 25px;
+	background: #FFFFFF;
+	-moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px;
+	text-align: left;
+}
+
+.signup-form h1 {
+	font-weight: 600;
+	font-size: 24px;
+	color: #343434;
+	letter-spacing: 0;
+	line-height: 1.4;
+	text-transform: capitalize;
+	text-align: center;
+	margin: 20px 0 40px 0;
+}
+
+.signup-form form textarea {
+	height: 100px;
+}
+
+.signup-form form .input-error {
+	border-color: #19b9e7;
+}
+
+.signup-form p {
+	font-family: 'Montserrat';
+	font-size: 12px;
+	color: #848484;
+	margin: 25px 0 10px 0;
+}
+
+.form-group {
+	margin-bottom: 20px;
+}
+
+/*
+.signup .btn-action.btn-round {
+	background: #3333CC;
+	border-color: #3333CC;
+	color: #FFFFFF;
+	font-size: 15px;
+	padding: 12px 24px;
+	font-weight: 600;
+	text-transform: capitalize;
+	border: 2px solid #3333CC;
+	border-radius: 30px;
+}
+
+.signup .btn-action.btn-round:hover, .signup .btn-action.btn-round:focus {
+	background: transparent;
+	color: #3333CC;
+	border-color: #3333CC;
+}
+
+.signup .btn-action {
+	background: #3333CC;
+	border-color: #3333CC;
+	color: #FFFFFF;
+}
+
+.signup .btn-action:hover {
+	background: transparent;
+	border-color: #3333CC;
+	color: #3333CC;
+}
+*/
+
+.signup input[type="text"],
+textarea,
+textarea.form-control {
+	height: 45px;
+    margin: 0;
+    padding: 0 20px;
+    vertical-align: middle;
+    background: #F8F8F8;
+    border: 1px solid #DDDDDD;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 50px;
+    color: #888888;
+    -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;
+    -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
+    -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
+}
+
+.signup textarea,
+textarea.form-control {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	line-height: 30px;
+}
+
+.signup input[type="text"]:focus,
+textarea:focus,
+textarea.form-control:focus {
+	outline: 0;
+	background: #FFFFFF;
+    border: 1px solid #111;
+    -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
+}
+
+input[type="text"]:-moz-placeholder, textarea:-moz-placeholder, textarea.form-control:-moz-placeholder { color: #888; }
+input[type="text"]:-ms-input-placeholder, textarea:-ms-input-placeholder, textarea.form-control:-ms-input-placeholder { color: #888; }
+input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder, textarea.form-control::-webkit-input-placeholder { color: #888; }
+
+
+
+.signup-form button.btn {
+	height: 45px;
+    margin: 0;
+    padding: 0 20px;
+    vertical-align: middle;
+    background: #111111;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 45px;
+    color: #FFFFFF;
+		text-transform: uppercase;
+    -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px;
+    text-shadow: none;
+    -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
+    -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
+}
+
+.signup-form button.btn:hover {
+	 opacity: 0.6; color: #FFFFFF;
+ }
+
+.signup-form button.btn:active {
+	 outline: 0;
+	 opacity: 0.6;
+	 color: #FFFFFF;
+	 -moz-box-shadow: none;
+	 -webkit-box-shadow: none;
+	 box-shadow: none;
+ }
+
+.signup-form button.btn:focus {
+	outline: 0;
+	opacity: 0.6;
+	background: #19b9e7;
+	color: #fff;
+}
+
+.signup-form button.btn:active:focus, button.btn.active:focus {
+	outline: 0;
+	opacity: 0.6;
+	background: #19b9e7;
+	color: #fff;
+}
+
+@media only screen and (max-width: 991px) {
+	.signup-form {
+		max-width: 500px;
+		margin: 0 auto;
+	}
+}
+
+
+/* -----------------------------------------------------------
+------------ Hero 6 Service Landing Styling Starts -----------
+-------------------------------------------------------------*/
+
+.hero-6 {
+	background: #000d1a;
+	background-size: cover;
+	padding: 150px 0 0 0;
+	text-align: center;
+}
+
+.hero-6 .intro {
+	text-align: center;
+	max-width: 480px;
+	padding: 75px 0 25px 0;
+}
+
+.hero-6 .intro h1 {
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 1.2;
+	letter-spacing: 0;
+	color: #FFFFFF;
+}
+
+.hero-6 .intro h1 span {
+	font-size: 48px;
+	font-weight: 600;
+	color: #FFFFFF;
+}
+
+.hero-6 .intro p {
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.4;
+	color: #A1A1A1;
+	margin-top: 25px;
+}
+
+.hero-6 .btn-action {
+	background: #0040ff;
+	border-color: #0040ff;
+	color: #FFFFFF;
+}
+
+
+/*------ Feature Big Section Styling Starts ------ */
+
+
+.feature_huge {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background: #FFFFFF;
+}
+
+.feature_huge img {
+	margin: 0 auto;
+	margin-bottom: 50px;
+}
+
+.feature_huge .f-intro {
+	margin-bottom: 100px;
+	overflow: hidden;
+}
+
+
+.feature_huge .f-intro h1 {
+	font-size: 28px;
+	font-weight: bold;
+	line-height: 1.2;
+}
+
+.feature_huge .f-intro p {
+	font-size: 14px;
+	line-height: 1.4;
+	margin-top: 20px;
+}
+
+
+.feature_huge .feature_list {
+	margin: 0 auto;
+	margin-top: 30px;
+	overflow: hidden;
+}
+
+.feature_huge .feature_list img {
+	width: 60px;
+	height: 60px;
+	margin-bottom: 10px;
+}
+
+.feature_huge .feature_list h1 {
+  font-size: 21px;
+  font-weight: 700;
+  padding: 0.5em;
+  color: #373C46;
+}
+
+.feature_huge .feature_list p {
+  font-size: 14px;
+  padding: 0.5em;
+	color: #606060;
+	letter-spacing: 0;
+	line-height: 1.3;
+	margin-bottom: 20px;
+}
+
+/*------ Feature Big Section Styling Ends ------ */
+
+
+/* ----- Counter Section Styling Starts -----*/
+
+.counter-section {
+ width: 100%;
+ padding-top: 100px;
+ padding-bottom: 100px;
+ background: #F3F3F3;
+}
+
+.counter-up {
+	background: #F2F2F2;
+	border-radius: 20px;
+	box-shadow:0 10px 10px rgba(108, 99, 255, .20);
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	transition: 0.2s;
+}
+
+.counter-up:hover {
+	background: #F2F2F2;
+	box-shadow:0 15px 15px rgba(108, 99, 255, .30);
+}
+
+
+.counter-section h3  {
+	font-size: 28px;
+	font-weight: 400;
+	color: #303030;
+}
+
+.counter-icon {
+  padding: 15px;
+}
+
+.counter-icon img {
+  width: 60px;
+	height: 60px;
+}
+
+.counter-text {
+	margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.counter-text h4 {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0.5em;
+  color: #9da6b8;
+}
+
+/* -------- Counter Section Styling Ends --------- */
+
+
+
+
+/*-----------------------------------------------------------
+------------ Pi Point Features Styling Starts ---------------
+-----------------------------------------------------------*/
+
+.f-points {
+	background: #FFFFFF;
+	padding: 100px 0 100px 0;
+}
+
+.points-intro {
+	padding: 0 0 50px 0;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.points-intro h1 {
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.points-intro p {
+	font-size: 16px;
+	line-height: 1.4;
+	margin-top: 20px;
+}
+
+.point-icon {
+	padding: 20px 0 5px 0;
+}
+
+.point-text {
+	padding: 15px;
+}
+
+.point-text h1 {
+	font-size: 21px;
+}
+
+.point-text p {
+	font-size: 14px;
+	color: #A1A1A1;
+	line-height: 1.4;
+	margin-top: 15px;
+}
+
+
+
+/* ---------------------------------------------------------
+------------- CTA 2 Styling Starts Here  -------------------
+----------------------------------------------------------*/
+
+.cta-2 {
+	background: #FFFFFF;
+	width: 100%;
+	padding: 150px 0 150px 0;
+}
+
+.cta-2-inner h1 {
+	font-size: 28px;
+	font-weight: 300;
+	line-height: 1.4;
+	color: #252525;
+	margin-bottom: 20px;
+}
+
+.cta-2-inner p {
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.4;
+	color: #222222;
+	margin-bottom: 10px;
+}
+
+.product .cta-2-inner h1 {
+	font-family: 'Josefin Sans';
+	font-size: 34px;
+	font-weight: 300;
+	line-height: 1.3;
+	color: #333333;
+	margin-bottom: 30px;
+}
+
+.product .cta-2-inner p {
+	font-family: 'Josefin Sans';
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.4;
+	color: #848484;
+	margin-bottom: 10px;
+}
+
+.cta-2 img {
+	margin-top: 20px;
+}
+
+.video-bg {
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/bg.jpg) no-repeat center center;
+	background-size: cover;
+	width: 100%;
+	padding: 150px 0 250px 0;
+}
+
+.video-bg .cta-2-inner h1 {
+	color: #FFFFFF;
+}
+
+.video-bg .cta-2-inner p {
+	color: #FFFFFF;
+}
+
+
+.video-bg .video-icon {
+	position: absolute;
+	top: 120%;
+	left:0;
+	right: 0;
+	outline: none;
+}
+
+.video-bg .video-icon i {
+	display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+	padding-left: 7px;
+  text-decoration: none;
+  text-align: center;
+	color: #6A11CB;
+	background: #FFFFFF;
+  font-size: 34px;
+  font-weight: normal;
+  line-height: 1.55em;
+  -webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	border-radius: 50%;
+	box-shadow:0 5px 10px rgba(0, 0, 0, .15);
+}
+
+/*----------------------------------------------------------
+------------------ Cta Big Styling Starts ------------------
+----------------------------------------------------------*/
+
+.cta-big {
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../images/p-bg.jpg) no-repeat center center;
+	background-size: cover;
+	padding: 150px 0 150px 0;
+}
+
+
+.cta-big-inner h1 {
+	font-weight: 400;
+	font-size: 32px;
+	color: #FFFFFF;
+	line-height: 1.1;
+}
+
+.cta-big-inner p {
+	font-weight: 300;
+	font-size: 16px;
+	color: #FFFFFF;
+	line-height: 1.4;
+	margin: 20px 0 0 0;
+}
+
+
+/* ----- Features Section Styling Starts ----- */
+
+
+.flex-split {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+}
+
+.flex-split .f-left {
+	flex: 1 0 50%;
+	background: #F3F3F3;
+}
+
+.flex-split .f-right {
+	flex: 1 0 50%;
+	background: url(../images/feature.gif) no-repeat center center;
+	background-size: cover;
+}
+
+
+.flex-split .f-right img {
+	margin-top: 0;
+}
+
+.flex-split .f-left  {
+	padding: 30px;
+}
+
+.flex-split .f-left  h2 {
+	font-family: 'Montserrat';
+	font-size: 28px;
+	color: #111111;
+	font-weight: 600;
+	line-height: 1.3;
+	margin-top: 40px;
+}
+
+.flex-split .f-left  p {
+	font-family: 'Montserrat';
+	font-size: 14px;
+	color: #111111;
+	font-weight: 300;
+	line-height: 1.3;
+	letter-spacing: 1px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.flex-split .btn-action {
+	margin-top: 15px;
+	margin-bottom: 20px;
+}
+
+
+.flex-split .video-icon {
+	position: absolute;
+	top: 45%;
+	left:0;
+	right:0;
+	outline: none;
+}
+
+.flex-split .video-icon i {
+	display: inline-block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+	padding-left: 7px;
+  text-decoration: none;
+  text-align: center;
+  color: #00CCDD;
+	background: #FFFFFF;
+  font-size: 34px;
+  font-weight: normal;
+  line-height: 1.55em;
+  -webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	border-radius: 50%;
+	box-shadow:0 5px 10px rgba(0, 0, 0, .15);
+}
+
+.product .f-right {
+	background: url(../images/pixel-video.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.product .flex-split .f-left h2 {
+	font-family: 'Josefin Sans';
+	font-size: 34px;
+	line-height: 1.2;
+}
+
+
+.product .flex-split .f-left  p {
+	font-family: 'Josefin Sans';
+	font-size: 16px;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+}
+
+.img-bg .f-right {
+	background: url(../images/feature-2.gif) no-repeat center center;
+	background-size: cover;
+}
+
+.img-bg .f-left {
+	background: #EEE;
+}
+
+/*-----------------------------------------------------------------
+--------------- Features Boxed Section Stying Starts --------------
+-----------------------------------------------------------------*/
+
+.features-boxed {
+	padding: 50px 0 100px 0;
+	background: #FFFFFF;
+}
+
+.features-boxed .boxed-intro {
+	padding: 50px 0 50px 15px;
+	overflow: hidden;
+}
+
+.features-boxed .boxed-intro h4 {
+	font-size: 13px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	color: #848484;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+
+.features-boxed .boxed-intro h4:after {
+	content: "";
+	display: block;
+	height: 2px;
+	width: 50px;
+	background: #448AFF;
+	margin-top: 20px;
+}
+
+.features-boxed .boxed-intro h1 {
+	font-size: 28px;
+	font-weight: 700;
+}
+
+.features-boxed .boxed-intro p {
+	font-size: 16px;
+	font-weight: 300;
+	color: #848484;
+	line-height: 1.4;
+	margin: 20px 0 0 0;
+}
+
+.features-boxed .box-inner {
+	padding: 30px 30px 30px 30px;
+	margin-bottom: 30px;
+	background: #F9F9F9;
+	min-height: 300px;
+	border-radius: 3px;
+	box-shadow:0 3px 6px rgba(0,0,0,.15);
+	-webkit-transition: box-shadow .3s ease-in-out;
+	-moz-transition:box-shadow .3s ease-in-out;
+	-ms-transition:box-shadow .3s ease-in-out;
+	-o-transition:box-shadow .3s ease-in-out;
+	transition:box-shadow .3s ease-in-out;
+}
+
+.features-boxed .box-inner:hover {
+	cursor: pointer;
+	box-shadow:0 10px 15px rgba(0,0,0,.15);
+}
+
+.features-boxed .box-inner .box-icon {
+	padding: 0 0 30px 0;
+}
+
+.features-boxed .box-inner .box-icon i {
+	font-size: 34px;
+	color: #448AFF;
+}
+
+.features-boxed .box-inner .box-info {
+	padding: 0 0 20px 0;
+}
+
+.features-boxed .box-inner .box-info h1 {
+	font-size: 21px;
+	font-weight: 400;
+	line-height: 1.2;
+	color: #343434;
+	margin: 0 0 20px 0;
+}
+
+.features-boxed .box-inner .box-info p {
+	font-size: 14px;
+	line-height: 1.6;
+	color: #A1A1A1;
+}
+
+.features-boxed .box-inner .box-arrow {
+	position: absolute;
+	right: 15%;
+	bottom: 12%;
+}
+
+.features-boxed .box-inner .box-arrow i {
+	font-size: 32px;
+	color: #448AFF;
+}
+
+
+/*------------------------------------------------------------
+---------------- App Features Styling Starts -----------------
+------------------------------------------------------------*/
+
+.app-features {
+	background: #F9F9F9;
+	padding: 100px 0 100px 0;
+	overflow-x: hidden;
+}
+
+.app-features h1 {
+	font-size: 34px;
+	font-weight: 300;
+	color: #252525;
+	margin: 0 0 10px 0;
+}
+
+.app-features p {
+	font-size: 16px;
+	font-weight: 300;
+	color: #A1A1A1;
+	line-height: 1.4;
+	margin: 20px 0 50px 0;
+}
+
+
+.app-features img {
+	 margin: 0 auto;
+	 margin-top: 25px;
+}
+
+.app-features .features-left, .app-features .features-right {
+	padding: 50px 0 0 0;
+}
+
+.app-features .icon {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.app-features .icon i {
+	font-size: 42px;
+	color: #0040ff;
+}
+
+
+.app-features .feature-single {
+	margin-left: 0;
+	margin-bottom: 50px;
+}
+
+
+.app-features .feature-single h1 {
+	font-size: 21px;
+	font-weight: 400;
+	color: #222222;
+	margin: 0 0 10px 0;
+	letter-spacing: 0;
+}
+
+.app-features .feature-single p {
+	font-size: 14px;
+	color: #A1A1A1;
+	line-height: 1.4;
+	max-width: 240px;
+	margin: 0 auto !important;
+	margin: 10px 0 0 0;
+}
+
+
+
+/*-----------------------------------------------------------
+----------------- Pitch Section Stying Starts ---------------
+-----------------------------------------------------------*/
+
+
+.pitch-2 {
+	width: 100%;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(../images/pitch-bg1.jpg) no-repeat center center;
+	background-size: cover;
+	padding: 150px 0 150px 0;
+}
+
+.pitch-inner {
+	max-width: 500px;
+  float: right;
+}
+
+.pitch-inner h4 {
+	font-family: 'Montserrat';
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
+
+.pitch-inner h1 {
+	font-family: 'Open Sans';
+	font-size: 28px;
+	line-height: 1.2;
+	margin-top: 20px;
+	color: #FFFFFF;
+}
+
+.pitch-inner p {
+	font-family: 'Open Sans';
+	font-size: 14px;
+	line-height: 1.5;
+	margin-top: 20px;
+	color: #FFFFFF;
+}
+
+
+/*--------------------------------------------------------------
+----------------- Features Section Stying Starts ---------------
+--------------------------------------------------------------*/
+
+
+.features {
+	background: #FFFFFF;
+	padding: 100px 0 100px 0;
+}
+
+.features-text {
+	padding: 0 0 0 0;
+	max-width: 500px;
+	overflow: hidden;
+}
+
+.features-text h2 {
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 1.2;
+	margin: 0 0 20px 0;
+}
+
+.features-text p {
+	font-size: 14px;
+	line-height: 1.4;
+	color: #A1A1A1;
+}
+
+
+.product .features-text h2 {
+	font-family: 'Josefin Sans';
+	font-size: 32px;
+	font-weight: 400;
+	color: #222222;
+}
+
+.product .features-text p {
+	font-size: 18px;
+	line-height: 1.6;
+	letter-spacing: 0;
+	margin-top: 25px;
+}
+
+
+.service .features-list {
+	text-align:
+}
+
+.service .features-list h2 {
+	font-size: 28px;
+	font-weight: 400;
+	color: #454545;
+}
+
+.service .features-list p {
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.6;
+	color: #A1A1A1;
+	margin-top: 25px;
+}
+
+/* -----------------------------------------------
+----------- Flex Features Styling Ends -----------
+-------------------------------------------------*/
+
+
+/* ----- Features Section Styling Starts ----- */
+
+
+.features-section {
+	width: 100%;
+	height: 100%;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+}
+
+.features-section .f-left {
+	flex: 1 0 50%;
+	background: #F3F3F3;
+}
+
+.features-section .f-right {
+	flex: 1 0 50%;
+	background: url(../images/split.jpg);
+	background-position: 50% 50%;
+	background-size: cover;
+}
+
+.nu-agency .f-right {
+	flex: 1 0 50%;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../images/feature-bg.png) no-repeat center center;
+	background-size: cover;
+}
+
+.features-section .f-right img {
+	margin-top: 0;
+}
+
+.features-section .f-left  {
+	padding: 30px;
+}
+
+.features-section .f-left  h2 {
+	font-family: "Montserrat";
+	font-size: 28px;
+	color: #373C46;
+	font-weight: 600;
+	line-height: 1.3;
+	margin-top: 40px;
+}
+
+.features-section .f-left  p {
+	font-family: 'Open Sans';
+	font-size: 18px;
+	color: #9da6b8;
+	font-weight: 300;
+	line-height: 1.4;
+	letter-spacing: 0;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.features-section .btn-action {
+	margin-bottom: 20px;
+}
+
+
+/*  --------------------------------------------------
+------------- Pricing Section Styling ----------------
+-----------------------------------------------------*/
+
+
+.pricing {
+	padding: 50px 0 100px 0;
+}
+
+.pricing-content {
+	padding: 60px 0 0 0;
+	text-align: center;
+}
+
+.pricing h1 {
+	font-size: 28px;
+	font-weight: 400;
+	letter-spacing: -1px;
+	line-height: 1.2;
+}
+
+.pricing h4 {
+	font-size: 14px;
+	font-weight: 400;
+	color: #A1A1A1;
+	margin: 10px 0 30px 0;
+}
+
+.pricing p {
+	font-family: 'Montserrat';
+	font-size: 14px;
+	font-weight: 400;
+	color: #444444;
+	line-height: 1.4;
+}
+
+.pricing .btn-buy {
+	padding: 40px 0 20px 0;
+}
+
+.pricing .btn-buy img {
+	display: inline;
+}
+
+.pricing .price-tag h2 {
+	font-family: 'Josefin Sans';
+	font-size: 24px;
+	font-weight: 400;
+	color: #A1A1A1;
+	margin: 0 0 20px 0;
+}
+
+
+
+/* ----- Pricing Tables Styling Starts ----- */
+
+.pricing-section {
+	width: 100%;
+	height: 100%;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background: #FFFFFF;
+}
+
+.pricing-intro {
+	padding-bottom: 30px;
+}
+
+.pricing-intro h1 {
+	font-size: 34px;
+	font-weight: 700;
+	line-height: 1.4;
+}
+
+.pricing-intro p {
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.4;
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
+
+.pricing-section .table-left, .pricing-section .table-right {
+	padding: 20px 20px 50px 20px;
+	margin: 0 auto;
+	margin-bottom: 30px;
+	background-color: #FFFFFF;
+	box-shadow: 0px 0px 80px 0px rgba(0,0,0,.1);
+	border: transparent;
+	max-width: 400px;
+}
+
+.table-left .icon, .table-right .icon {
+	padding: 50px;
+}
+
+.table-left .icon img, .table-right .icon img {
+	width: 80px;
+	height: 80px;
+	margin: 0 auto;
+}
+
+.table-left .pricing-details span, .table-right .pricing-details span {
+	display: inline-block;
+	font-family: 'Montserrat';
+	font-size: 28px;
+	font-weight: 400;
+	color: #808080;
+	margin-bottom: 20px;
+}
+
+.table-left .pricing-details h2, .table-right .pricing-details h2 {
+	font-size: 18px;
+	font-weight: 600;
+	color: #505050;
+	margin-bottom: 30px;
+}
+
+.table-left .pricing-details p, .table-right .pricing-details p {
+	font-family: 'Montserrat';
+	font-size: 14px;
+	font-weight: 300;
+	color: #505050;
+	letter-spacing: 1px;
+	line-height: 1.4;
+}
+
+.table-left .pricing-details ul, .table-right .pricing-details ul {
+	margin-top: 30px;
+	margin-bottom: 50px;
+	padding: 0;
+}
+
+
+.table-left .pricing-details li, .table-right .pricing-details li {
+	font-family: 'Montserrat';
+	font-size: 14px;
+	font-weight: 400;
+	color: #505050;
+	line-height: 1.4;
+	margin-bottom: 10px;
+}
+
+.pricing-section .table-left:hover, .pricing-section .table-right:hover {
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+}
+
+.pricing-section .table-left, .pricing-section .table-right {
+	margin-top: 20px;
+}
+
+.pricing-section .table-center {
+	margin-top: 0;
+}
+
+/*-------- Pricing Small Section Styling ------------*/
+
+.pricing-sm {
+	background: #F6F6F6;
+}
+
+.pricing-sm .pricing-intro h1 {
+	font-weight: 300;
+	font-size: 34px;
+}
+
+.pricing-sm .pricing-intro p {
+	font-weight: 300;
+	font-size: 16px;
+	color: #848484;
+	letter-spacing: 0;
+}
+
+
+.pricing-sm .pricing-details {
+	padding: 50px 0 0 0;
+}
+
+
+.pricing-sm .table-left .pricing-details h2, .pricing-sm .table-right .pricing-details h2 {
+	font-size: 24px;
+	font-weight: 400;
+	color: #505050;
+	margin-bottom: 30px;
+}
+
+.pricing-sm .table-left .pricing-details span, .pricing-sm .table-right .pricing-details span {
+	font-size: 42px;
+	font-weight: 300;
+	color: #848484;
+	margin-bottom: 20px;
+}
+
+.pricing-sm .table-left .pricing-details li, .pricing-sm .table-right .pricing-details li {
+	font-size: 16px;
+	font-weight: 300;
+	color: #848484;
+	line-height: 1.4;
+}
+
+
+
+/*  ---------------------------------------------------
+------------- Video BG Section Styling ----------------
+-----------------------------------------------------*/
+
+
+.product .video-icon i {
+	color: #624dd6;
+}
+
+
+
+
+/*  --------------------------------------------------
+------------- Reviews Section Styling ----------------
+-----------------------------------------------------*/
+
+.review-section {
+	padding: 100px 0 100px 0;
+	text-align: center;
+	background: #F1F1F1;
+}
+
+
+.reviews {
+  width: 100%;
+	padding: 50px;
+	box-shadow: 0 3px 0px rgba(108, 99, 255, 0.99);
+	background: #F9F9F9;
+	transition: 0.3s;
+}
+
+
+.review-single img {
+  width:80px;
+	height:80px;
+}
+
+.review-text h3 {
+  font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 0;
+	line-height: 1.5;
+  color: #443434;
+}
+
+.review-text .ion {
+	display: inline-block;
+	margin-top: 20px;
+  font-size: 14px;
+  color: #ff8000;
+}
+
+.review-text p {
+	font-family: "Montserrat" !important;
+  font-size: 14px;
+	font-weight: 300;
+  padding: 20px 10px 20px 10px;
+	line-height: 1.5;
+  color: #443434;
+}
+
+
+/*--------------- Review Sm Styling Starts ------------------ */
+
+.review-sm {
+	background: #FFFFFF;
+}
+
+.review-sm .reviews {
+  width: 100%;
+	padding: 0;
+}
+
+.review-sm p {
+  font-family: 'Josefin Sans';
+  font-size: 28px;
+	font-weight: 300;
+  padding: 20px 10px 20px 10px;
+	line-height: 1.5;
+  color: #848484;
+}
+
+.review-sm .review-text h3 {
+	font-family: 'Josefin Sans';
+  font-size: 21px;
+	font-weight: 600;
+	letter-spacing: 0;
+	line-height: 1.5;
+  color: #444444;
+}
+
+/*----------------------------------------------------------------
+--------------- Clients Section Styling Starts -------------------
+----------------------------------------------------------------*/
+
+.client-section {
+	background-color: #F3F3F3;
+	padding: 30px 0 30px 0;
+}
+
+
+.client-section ul {
+	list-style-type: none;
+	display: inline-block;
+}
+
+.client-section ul li {
+	display: inline-block;
+	margin-right: 75px;
+	line-height: 1;
+}
+
+.client-section img {
+	max-width: 100%;
+	-webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+		opacity: 0.3;
+}
+
+
+/*--------------------------------------------------------------
+----------------- Specs Section Stying Starts ---------------
+--------------------------------------------------------------*/
+
+.specs {
+	background: #EEEEEE;
+	padding: 100px 0 50px 0;
+}
+
+.specs-intro {
+	padding: 0 0 100px 0;
+}
+
+.specs-intro h1 {
+	font-family: 'Josefin Sans';
+	font-size: 34px;
+	color: #232323;
+}
+
+.specs-intro p {
+	font-family: 'Josefin Sans';
+	font-size: 18px;
+	color: #848484;
+	margin-top: 20px;
+}
+
+.specs img {
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.specs-inner {
+	padding-top: 20px;
+}
+
+
+.specs-inner .icon {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.specs-inner .icon i {
+	font-size: 34px;
+	color: #624dd6;
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	-o-transition: 0.2s;
+		transition: 0.2s;
+}
+
+.specs-inner .col-sm-6 {
+	-webkit-transition: transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.specs-inner .col-sm-6:hover {
+	transform: scale(0.95);
+}
+
+.specs-inner .col-sm-6:hover .icon i {
+	font-size: 34px;
+	color: #624dd6;
+}
+
+.specs-inner .text {
+	text-align: center;
+}
+
+.specs-inner .text p {
+	text-align: center;
+	font-size: 15px !important;
+	font-weight: 400 !important;
+	line-height: 1.4;
+	text-transform: uppercase;
+	margin-bottom: 50px;
+}
+
+
+/* --------------- Feature Sub ------------ */
+
+.feature-sub {
+	background: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url(../images/feature-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding: 150px 0 150px 0;
+}
+
+.feature-sub .sub-inner h1 {
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 1.2;
+	color: #FFFFFF;
+	margin: 0 0 30px 0;
+}
+
+.sub-inner {
+	max-width: 500px;
+	float: left;
+}
+
+.feature-sub .btn-action {
+	background: #fff;
+	border-color: #fff;
+	color: #333;
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+----------------- Subscribe Form  Stying Starts ----------------
+--------------------------------------------------------------*/
+
+.subform {
+	padding-top: 30px;
+}
+
+.hero-5 .subform {
+	padding-top: 50px;
+}
+
+.formee {
+	position: relative;
+}
+
+.formee .mail {
+	position: relative;
+	background-color: #F9F9F9;
+  box-shadow: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  transition: all .3s;
+}
+
+.formee input {
+  color: #222222;
+  font-family: 'Montserrat';
+  padding: 0;
+  font-size: 14px;
+	height: 40px;
+  border: 2px solid #F2F2F2;
+  border-radius: 5px 0 0 5px;
+  border-color: #F2F2F2;
+	background-color: #F3F3F3;
+  outline: none;
+  padding: 0 100px 0 20px;
+}
+
+.formee input:focus {
+	border: 2px solid #FFF;
+  border-color: #F2F2F2;
+}
+
+.formee .right {
+  height: 40px;
+  border: 2px solid #0040ff;
+  border-radius: 0 5px 5px 0;
+  margin: 0;
+  padding: 0 25px 0 25px;
+  background-color: #0040ff;
+  color: #FFFFFF;
+	box-shadow: 0 0 1px transparent;
+  outline: none;
+	-webkit-transition: 500ms;
+	-moz-transition: 500ms;
+	transition: 500ms;
+}
+
+.formee .right:focus {
+	border: 2px solid #0040ff;
+}
+
+#email-error {
+	position: absolute;
+	left: 10%;
+	top: 150%;
+	font-family: 'Montserrat';
+	font-size: 14px;
+	color: #FF0000;
+}
+
+#response {
+	color: #333333;
+	font-family: 'Montserrat';
+	margin-top: 30px;
+	font-size: 14px;
+	line-height: 1.4;
+}
+
+/*---------------------------------------------------
+----------- Contact Section Styling Starts -------------
+---------------------------------------------------*/
+
+.contact {
+	width: 100%;
+	height: 100%;
+	padding: 100px 0 0 0;
+}
+
+.contact .inner h1 {
+	font-size: 34px;
+	font-weight: 300;
+	line-height: 1.2;
+	margin-bottom: 20px;
+}
+
+.contact .inner p {
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.4;
+}
+
+.contact .address {
+	padding: 10px 0 100px 0;
+}
+
+.contact .address h1 {
+	font-size: 24px;
+	color: #454545;
+	margin-bottom: 30px;
+}
+
+.contact .address p {
+	font-size: 21px;
+	color: #454545;
+	line-height: 1.8;
+}
+
+.contact .address p:nth-child(3) {
+	margin-top: 30px;
+}
+
+.contact .address p:nth-child(5) {
+	margin-top: 30px;
+}
+
+/* ------------ Contact Form Styling --------*/
+
+.contact {
+	padding: 100px 0 100px 0;
+}
+
+.contact-intro h1 {
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+.contact-intro p {
+	font-size: 14px;
+	line-height: 1.6;
+	margin-top: 20px;
+}
+
+.contact-form {
+	padding-top: 100px;
+}
+
+label {
+	display: block;
+  font-family: 'Montserrat';
+  font-size: 14px;
+  font-weight: 400;
+  color: #252525;
+	text-align: left;
+}
+
+ .contact-form .form-control {
+  border: 1px solid #EEEEEE;
+  border-radius: 5px;
+  margin-top: 10px;
+  background: #F1F1F1;
+  margin-bottom: 40px;
+  /*border-bottom: 1px solid #999999;*/
+  -webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,0);
+  box-shadow: inset 0 0px 0px rgba(0,0,0,0);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.form-control:focus {
+  border-color: #624dd6;
+	background: #F4F4F4;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.contact-form input[type="text"],
+textarea,
+textarea.form-control {
+	height: auto;
+	background: #F1F1F1;
+}
+
+
+.signup input[type="text"]:focus,
+textarea:focus,
+textarea.form-control:focus {
+	outline: 0;
+	background: #F6F6F6;
+    border: 1px solid #624dd6;
+}
+
+
+.form-control::-webkit-input-placeholder {
+  font-family: 'Montserrat';
+  font-size: 13px;
+  color: #999999;
+}
+.form-control:-moz-placeholder {
+	font-family: 'Montserrat';
+  font-size: 13px;
+  color: #999999;
+}
+.form-control::-moz-placeholder {
+	font-family: 'Montserrat';
+  font-size: 13px;
+  color: #999999;
+}
+.form-control:-ms-input-placeholder {
+	font-family: 'Montserrat';
+  font-size: 13px;
+  color: #999999;
+}
+
+.text-muted {
+	font-family: 'Montserrat';
+  font-size: 13px;
+  color: #222222;
+}
+
+.text-muted strong {
+  color: #FF3333;
+}
+
+.btn-send {
+	font-family: 'Montserrat';
+	font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+	padding: 10px 20px;
+  border-radius: 50px;
+  color: #FFFFFF;
+  background: #624dd6;
+	border-color: #624dd6;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.btn-send:hover, .btn-send:focus {
+  color: #FFFFFF;
+  background: #472fd0;
+	border-color: #472fd0;
+  outline: none !important;
+}
+
+.error-message {
+	color: #FF3333;
+	font-family: 'Montserrat';
+	margin-top: 5px;
+}
+
+.success-message {
+	color:#33cc33;
+	font-family: 'Montserrat';
+	margin-top: 5px;
+}
+
+.help-block {
+	font-family: 'Montserrat';
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+
+/* -------- Contact Section Styling Ends ---- */
+
+
+
+/* ------ Download Section Styling------------ */
+
+.download {
+  width: 100%;
+  height: 100%;
+  background: #F3F3F3;
+	padding: 100px 0 100px 0;
+}
+
+.app-img {
+  display: inline-block;
+}
+
+
+.app-info h3 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #404040;
+  margin-top: 20px;
+}
+
+.app-info h4 {
+  font-size: 18px;
+  font-weight: 300;
+  color:  #3C4B5D;
+  margin: 20px 0 10px 0;
+}
+
+.app-info ul {
+	margin-top: 20px;
+}
+
+.app-info span {
+  font-family: 'Montserrat';
+  font-size: 12px;
+  font-weight: 400;
+  color: #222222;
+}
+
+.app-info .ion {
+  font-size: 1em;
+  color: #ff8000;
+}
+
+.download-buttons {
+	margin: 30px;
+}
+
+.download-buttons img {
+  height: 50px;
+  width: 160px;
+	margin: 0 5px 0 5px;
+}
+
+
+/*------ Download Section Styling Ends ------ */
+
+
+/*------------ Footer Sm Styling ---------------*/
+
+
+.footer-sm {
+  background-color: #F3F3F3;
+  width: 100%;
+  height: 100%;
+	overflow: hidden;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.footer-sm img {
+	margin-bottom: 20px;
+}
+
+.footer-menu ul {
+	list-style-type: none;
+}
+
+.footer-menu li {
+	display: inline;
+	line-height: 2;
+	font-family: 'Montserrat';
+	font-size: 12px;
+	letter-spacing: 1px;
+	padding-right: 15px;
+	text-transform: uppercase;
+}
+
+.footer-menu li a {
+	color: #707570;
+	text-decoration: none;
+}
+
+.footer-text p {
+	font-size: 13px;
+	color: #707570;
+	font-weight: 300;
+	line-height: 2;
+	letter-spacing: 1px;
+	margin-top: 10px;
+}
+
+/* ------- Footer Section Styling Starts ------- */
+
+
+
+/* -------------------------------------------------------
+----------- Bact-to-Top Styling Starts Here --------------
+---------------------------------------------------------*/
+
+
+.back-to-top {
+	background: rgba(51, 51, 204, 0.9);
+	margin: 0;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	z-index: 90;
+	display: none;
+	text-decoration: none;
+	color: #0E1729;
+	box-shadow:0 5px 10px rgba(0, 0, 0, .3);
+}
+
+.back-to-top i {
+	position: relative;
+	left: 14px;
+	top: 8px;
+	font-size: 28px;
+	color: #FFFFFF;
+	-webkit-transition: 200ms;
+	-moz-transition: 200ms;
+	-o-transition: 200ms;
+	transition: 200ms;
+}
+
+.back-to-top:hover {
+    background: rgba(51, 51, 204, 0.9);
+    color: #FFFFFF;
+}
+
+.back-to-top:hover i {
+	top: 6px;
+}
+
+.back-to-top:focus {
+    color: #FFFFFF;
+}
+
+.f-icon {
+	float: left;
+}
+
+.f-icon i {
+	font-size: 42px;
+	color: #3333CC;
+}
+
+.feature-single {
+	margin-top: 5px;
+	margin-left: 60px;
+	margin-bottom: 30px;
+}
+
+.feature-single h1 {
+	font-size: 18px;
+	font-weight: 400;
+	color: #222222;
+	margin: 0 0 10px 0;
+	letter-spacing: 1px;
+}
+
+.feature-single p {
+	font-family: 'Montserrat';
+	font-size: 14px;
+	color: #A1A1A1;
+	line-height: 1.4;
+	margin: 15px 0 0 0 !important;
+}
+
+
+
+
+/*-----------------------------------------------------
+-------------------------------------------------------
+------------------- All Media Queries------------------
+-------------------------------------------------------
+-----------------------------------------------------*/
+
+@media only screen and (min-width: 767px) {
+
+	.logo {
+		left: 6%;
+		top: 5%;
+	}
+
+	.hero-1 {
+		padding: 200px 0 0 0;
+	}
+
+	.hero-1 .intro {
+		padding: 100px 0 75px 0;
+	}
+
+	.hero-1 .intro h1 {
+		font-size: 42px;
+	}
+
+	.hero-1 .intro p {
+		font-size: 18px;
+	}
+
+	.hero-3 .intro {
+		padding: 100px 0 100px 0;
+		text-align: left;
+	}
+
+	.hero-3 .intro h1 {
+		font-size: 38px;
+	}
+
+	.hero-3 .intro p {
+		font-size: 18px;
+	}
+
+	.features-boxed .boxed-intro h1 {
+		font-size: 34px;
+	}
+
+	.signup {
+		padding: 150px 0 100px 0;
+	}
+
+	.signup .intro h1 {
+		font-size: 42px;
+	}
+
+	.hero-6 .intro {
+		padding: 150px 0 25px 0;
+		text-align: left;
+		margin: 0 auto;
+		max-width: 480px;
+	}
+
+
+	.hero-6 .intro h1 {
+		font-size: 42px;
+	}
+
+	.hero-7 .intro h1 {
+		font-size: 42px;
+	}
+
+	.hero-7 .intro h4 {
+		font-size: 13px;
+	}
+
+
+	.hero-4 .intro h1 {
+		font-size: 48px;
+	}
+
+	.counter-up {
+    padding-bottom: 2em;
+		padding-top: 1em;
+  }
+
+  .counter-text {
+    margin-bottom: 0;
+  }
+
+	.counter-section h3  {
+		font-size: 28px;
+	}
+
+	.counter-text h4 {
+	  font-size: 18px;
+	}
+
+
+	.feature_huge .f-intro h1 {
+		font-size: 34px;
+	}
+
+	.feature_huge .f-intro p {
+		font-size: 16px;
+	}
+
+
+	.feature_huge .feature_list img {
+		width: 65px;
+		height: 65px;
+	}
+
+	.feature_huge .feature_list h1 {
+	  font-size: 18px;
+	}
+
+	.feature_huge .feature_list p {
+	  font-size: 14px;
+	}
+
+	.features-section {
+			-webkit-flex-direction: row;
+			flex-direction: row;
+		}
+
+		.features-section .f-left h2 {
+			font-size: 34px;
+		}
+
+		.features-section .f-left {
+			padding: 60px;
+		}
+
+		.features-section .f-right {
+				flex: 1 0 50%;
+		}
+
+	.pitch-inner h1 {
+		font-size: 34px;
+	}
+
+	.points-intro h1 {
+		font-size: 34px;
+	}
+
+	.features-list {
+		padding: 20px 0 0 0;
+		overflow: hidden;
+	}
+
+	.product .features-text {
+		padding: 100px 0 0 0;
+	}
+
+	.features-text h1 {
+		font-size: 34px;
+		line-height: 1;
+	}
+
+	.flex-split {
+		-webkit-flex-direction: row;
+		flex-direction: row;
+	}
+
+	.flex-split .f-left h2 {
+		font-size: 34px;
+	}
+
+	.flex-split .f-left {
+		padding: 80px;
+	}
+
+	.flex-split .f-right {
+			flex: 1 0 50%;
+	}
+
+	.features-text h2 {
+		font-size: 34px;
+	}
+
+	.features-text p {
+		font-size: 18px;
+	}
+
+
+	.cta-big-inner h1 {
+		font-size: 42px;
+	}
+
+	.cta-2-inner h1 {
+		font-size: 34px;
+	}
+
+	.contact-intro h1 {
+		font-size: 34px;
+	}
+
+/* -------- Hero Split ------------ */
+
+	.hero-split {
+		-webkit-flex-direction: row;
+		flex-direction: row;
+	}
+
+	.hero-split .h-left {
+		padding: 200px 50px 150px 50px;
+	}
+
+	.hero-split .h-right {
+			flex: 1 0 50%;
+	}
+
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+	.hero-1 .intro {
+		text-align: left;
+		padding: 0;
+	}
+
+	.hero-split .h-left {
+		padding: 200px 100px 150px 50px;
+	}
+
+	.hero-split .h-left h2 {
+		font-size: 46px;
+	}
+
+	.features-text {
+		padding: 75px 0 0 0;
+	}
+
+	.product .features-text {
+		padding: 120px 0 0 0;
+	}
+
+	.app-features img {
+		 margin: 0 auto;
+		 margin-top: 75px;
+	}
+
+	.features-list {
+		padding: 150px 0 50px 0;
+	}
+
+	.service .features-list {
+		padding: 0px 0 50px 0;
+	}
+
+	.specs-inner {
+		padding: 50px 0 0 0;
+	}
+
+	.contact .address {
+		padding: 100px 0 100px 100px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+
+		.hero-1 .intro {
+			text-align: left;
+			padding: 100px 0 75px 0;
+		}
+
+	.formee input {
+		padding: 0 150px 0 20px;
+	}
+
+	.formee .right {
+		padding: 0 25px 0 25px;
+	}
+
+	.app-features img {
+		 margin: 0 auto;
+		 margin-top: 25px;
+	}
+
+}
+
+@media only screen and (max-width: 766px) {
+
+	.flex-split .f-right {
+		flex: 1 0 50%;
+		height: 360px;
+	}
+
+	.hero-split .h-right {
+		flex: 1 0 50%;
+		height: 360px;
+	}
+
+}
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+
+ .subscribe-form .mail {
+   padding: 0 30px 0 20px;
+   border-radius: 5px 0 0 5px;
+ }
+
+ .subscribe-form .submit-button {
+   padding: 0 5px 0 5px;
+   border-radius: 0 5px 5px 0;
+ }
+}
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+
+ .formee input {
+   padding: 0 30px 0 20px;
+   border-radius: 5px 0 0 5px;
+ }
+
+ .formee .right {
+   padding: 0 5px 0 5px;
+   border-radius: 0 5px 5px 0;
+ }
+}
+
+
+@media screen and (max-width: 399px) {
+
+	.cta-sub {
+		text-align: center;
+	}
+
+	.subscribe-form {
+		text-align: center;
+	}
+
+ .formee input {
+	 text-align: center;
+   padding: 0 0 0 0;
+   border-radius: 5px 0 0 5px;
+ }
+
+ .formee .right {
+   padding: 0 5px 0 5px;
+   border-radius: 0 5px 5px 0;
+	 margin-top: 15px;
+ }
+
+ .form .sub-form .subscribe-form {
+ 	text-align: left;
+ }
+
+
+  .form .sub-form .formee input {
+ 	 text-align: center;
+    padding: 0 0 0 0;
+    border-radius: 5px 0 0 5px;
+  }
+
+  .form .sub-form .formee .right {
+    padding: 0 5px 0 5px;
+    border-radius: 0 5px 5px 0;
+ 	 margin-top: 15px;
+  }
+
+ .back-to-top {
+	right: 10px;
+}
+}
+
+
+@media screen and (max-width: 399px) {
+
+	.subscribe-form {
+		text-align: center;
+	}
+
+ .subscribe-form .mail {
+	 text-align: center;
+   padding: 0 0 0 0;
+   border-radius: 5px 0 0 5px;
+ }
+
+ .subscribe-form .submit-button {
+   padding: 0 5px 0 5px;
+   border-radius: 0 5px 5px 0;
+	 margin-top: 15px;
+ }
+
+ }
+
+
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+
+ .subscribe-form .mail {
+   padding: 0 30px 0 20px;
+   border-radius: 5px 0 0 5px;
+ }
+
+ .subscribe-form .submit-button {
+   padding: 0 5px 0 5px;
+   border-radius: 0 5px 5px 0;
+ }
+}
+
+
+@media screen and (max-width: 399px) {
+
+	.subscribe-form {
+		text-align: left;
+	}
+
+	.subscribe-form {
+		text-align: center;
+	}
+
+ .subscribe-form .mail {
+	 text-align: center;
+	 padding: 0 10px 0 10px;
+   border-radius: 5px 0 0 5px;
+ }
+
+ .subscribe-form .submit-button {
+   padding: 0 10px 0 10px;
+   border-radius: 0 5px 5px 0;
+	 margin-top: 15px;
+ }
+
+ .download-buttons img {
+	height: 40px;
+	width: 120px;
+	}
+}
+
+
+/* --------------------------------------------------
+------- Media Queries for Split Layout Ends ---------
+---------------------------------------------------*/

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="qiApp">
+
+<head>
+    <meta charset="utf-8">
+    <title>Qi Enabler | Charge Anywhere.</title>
+    <link rel="icon" href="assets/images/favicon.png" type="image/png" sizes="40x40">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Qi Enabler | Charge Anywhere.">
+    <meta name="keywords" content="Qi, QiEnabler, wireless Charging, Charge Anywhere.">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans%7CPoppins:300,400,600%7CMontserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Resource style -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/ionicons.min.css">
+    <!-- Resource style -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script src="assets/js/contactInfo.js"></script>
+</head>
+
+<body ng-controller="qiCtrl">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Message </th>
+            </tr>
+        </thead>
+        <tbody ng-repeat="enquiry in response track by $index">
+            <tr>
+                <td>{{enquiry.name}}</td>
+                <td>{{enquiry.email}}</td>
+                <td>{{enquiry.message}}</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
