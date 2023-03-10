@@ -1,3 +1,3 @@
 ### LABEL
 
-LABEL instruction is useful to give some metadata information.
+LABEL instruction is useful to give some metadata information. 
